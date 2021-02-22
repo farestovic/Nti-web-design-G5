@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form ==> block Element -->
+    <!-- method ==> POST , GET(default) , autocomplete=>off/on -->
+    <form method="GET" action="index.html" autocomplete="off">
+        <!-- label , input , select ==> inline Elements -->
+        <!-- <label>Enter your name</label> -->
+
+        <!-- readonly , required , disabled , value , placeholder , name , type  , autocomplete ==> off/on  , id-->
+        <input type="text" id="username" placeholder="Enter Your Name" name="username" required minlength="4"
+            maxlength="10"> <br>
+        <input type="text" value="alex" name="firstName" readonly> <br>
+        <label>Enter your age</label>
+        <input type="number" placeholder="enter your age" name="age"> <br>
+        <input type="number" value="9"> <br>
+        <input type="password" placeholder="enter your password" required name="password"> <br>
+        <!-- label attribute ==> for -->
+        <label for="myEmail">Enter your email</label> <br>
+        <input type="email" name="myEmail" id="myEmail"> <br>
+
+        <label>Gender</label> <br>
+        <input type="radio" name="gender" value="0"> Male
+        <input type="radio" name="gender" value="1" checked> Female <br>
+        <label>Hobbies</label> <br>
+        <input type="checkbox" name="reading" value="0" checked> Reading
+        <input type="checkbox" name="football" value="1"> football
+        <input type="checkbox" name="volleyball" value="2" checked> volleyball
+        <input type="checkbox" name="sleeping" value="3"> sleeping
+        <hr>
+        <!-- <label>choose your track</label> -->
+        <!-- select==> inline Element -->
+        <!-- select attribute ==> name , id , multiple -->
+        <select name="course" multiple>
+            <!-- option attributes ==> selected , disabled -->
+            <option selected disabled>Select Your course</option>
+            <option value="0">html</option>
+            <option value="1" disabled>css</option>
+            <option value="2">JS</option>
+        </select>
+        <br>
+
+        <!-- <input type="text" name="address"> -->
+        <label for="msg">enter yout message</label>
+        <!-- textarea attributes ==> cols , rows , name , value ,placeholder , id  -->
+        <textarea rows="6" cols="20" placeholder="enter your message" id="msg"></textarea>
+        <hr>
+        <input type="file" name="file" multiple>
+        <hr>
+        <select>
+            <option>cr</option>
+            <option>css</option>
+            <option>ctt</option>
+            <option>cf</option>
+            <option>cx</option>
+            <option>cf</option>
+            <option>cf</option>
+            <option>cz</option>
+        </select>
+
+        <input list="choose" name="select">
+        <datalist id="choose">
+            <option>cr</option>
+            <option>css</option>
+            <option>ctt</option>
+            <option>cf</option>
+            <option>cx</option>
+            <option>cfe</option>
+            <option>cfr</option>
+            <option>czx</option>
+        </datalist>
+    <hr>
+    <input type="date" name="date"> <br>
+    <input type="month"> <br>
+    <input type="time"> <br>
+    <input type="datetime-local">
+    <hr>
+    <input type="color" name="color">
+    <input type="number" step="10" min="0" max="100"> <br>
+    <input type="range" name="range" value="150" min="50" max="200" >
+    <br>
+    <!-- 233-345-455 -->
+    <!-- +022334445 -->
+    <input type="tel" name="phone" placeholder="222-33-444" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <input type="tel" name="phone" pattern="[0-9]{8}">
+    <input type="tel" name="phone" pattern="[a-z]{8}">
+        <br>
+        <!-- button inside form ==> type = submit(default) -->
+        <button>Register</button>
+        <button type="reset">button</button>
+        <button type="button">button</button>
+        <!-- <input type="submit" value="Register"> -->
+        <input type="reset" value="Clean">
+        <input type="button" value="Clean">
+
+    </form>
+
+
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+           
+        </fieldset>
+        <fieldset>
+            <legend>work Experience</legend>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+           
+        </fieldset>
+        <fieldset>
+            <legend>education</legend>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+            <input type="text" placeholder="username"> <br>
+           
+        </fieldset>
+        <input type="submit">
+    </form>
+
+
+    <!-- button outside form ==> type = button (default) -->
+    <!-- <button>register</button> -->
+</body>
+
+</html>
